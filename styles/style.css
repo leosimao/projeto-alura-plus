@@ -26,7 +26,8 @@ body {
     background-image: url(../assets/background-principal.png);
     background-repeat: no-repeat;
     background-size: contain;
-
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -35,9 +36,17 @@ body {
     grid-template-columns: 50% 50%;
 }
 
+.container__caixa {
+    margin: 0 6em;
+}
+
 .container__titulo {
     font-size: 1.75rem;
     font-weight: 700;
+}
+
+.container__imagem {
+    margin: 2em 0 6em 0;
 }
 
 .container__botao {
@@ -46,6 +55,7 @@ body {
     padding: 16px;
     border-radius: 8px;
     display: block;
+    margin-bottom: 1em;
 }
 
 .botao-azul {
@@ -60,5 +70,75 @@ body {
 
 .container__aviso {
     font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.apresentacao_plataforma {
+    margin: 0 10em;
+    align-items: center;
+}
+
+.apresentacao_plataforma__titulo{
+    font-size: 3rem;
+    margin-bottom: 0.2em;
+}
+
+.apresentacao_plataforma__texto {
+    color: var(--cinza-secundario);
+}
+
+.apresentacao_plataforma__botao {
+    display: inline-block;
+    background-color: var(--azul);
+    border: 3px solid var(--azul);
+    margin-top: 1em ;
+}
+
+.tela-alura{
+    margin-left: 1em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__item {
+    font-size: 2rem;
+}
+
+.rodape-alura-plus {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.rodape__lista_links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 16px;
+    margin: 2em 0;
+    color: var(--cor-text-principal);
+}
+
+.rodape__item_link__ancora {
+    text-decoration: none;
+    color: var(--cor-text-principal);
+    font-size: 1rem;
+}
+
+.rodape__paragrafo {
+    margin: 1em;
     color: var(--cinza-secundario);
 }
